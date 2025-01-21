@@ -46,6 +46,7 @@ function HomePage() {
 
   return (
     <div  className="homepage-container">
+        
       <div className="magic-text">
         {text && text.split('').map((letter, index) => (
           <span key={index}>{letter}</span>
