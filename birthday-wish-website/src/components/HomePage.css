@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Using Poppins font */
+  background: none;
+  animation: gradient 5s infinite alternate;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.magic-text {
+  display: flex;
+  font-size: 4rem; /* Increased font size for better visibility */
+  font-weight: 700; /* Bold weight */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.magic-text span {
+  animation: bounce 1.5s infinite;
+  margin: 0 5px;
+}
+
+.magic-text span:nth-child(1) { animation-delay: 0s; }
+.magic-text span:nth-child(2) { animation-delay: 0.2s; }
+.magic-text span:nth-child(3) { animation-delay: 0.4s; }
+.magic-text span:nth-child(4) { animation-delay: 0.6s; }
+.magic-text span:nth-child(5) { animation-delay: 0.8s; }
+.magic-text span:nth-child(6) { animation-delay: 1s; }
+
+.birthday-wish {
+  color: white;
+  font-size: 1.8rem; /* Larger font size for the birthday message */
+  margin: 20px 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  font-weight: 600; /* Bold weight for the message */
+}
+
+.magic-button {
+  padding: 12px 24px;
+  font-size: 1.4rem; /* Slightly larger font size */
+  color: #fff;
+  background: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 700; /* Bold weight for the button text */
+}
+
+.magic-button:hover {
+  background: #ff8f81;
+  transform: scale(1.05);
+}
+
+/* Background overlay with opacity */
+.homepage-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../Images/birthday.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5; /* Semi-transparent background */
+  z-index: -1;
+}
+/* Text glow effect */
+.magic-text {
+    display: flex;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(243, 80, 80);
+    text-shadow: 0 0 10px #daec14cc, 0 0 20px rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+  }
+  
+  /* Add a simple fade-in animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .magic-text {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Button Hover Effect */
+  .magic-button {
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 700;
+  }
+  
+  .magic-button:hover {
+    background: #ff8f81;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  

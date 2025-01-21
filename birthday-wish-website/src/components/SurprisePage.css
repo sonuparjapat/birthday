@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    animation: gradient 8s infinite alternate;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    color: #fdfdfd;
+    font-size: 1.5rem;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #6a67ce;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #9084d6;
+    transform: scale(1.05);
+  }
