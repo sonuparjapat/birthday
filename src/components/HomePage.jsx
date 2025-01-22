@@ -12,6 +12,7 @@ function HomePage() {
     height: '100vh', // Make sure the background covers the entire screen height
   };
   const compliments = [
+    'Wish you the happiest birthday to my favourate 🌟',
     'You are a shining star in this world, lighting up everything around you! 🌟',
     'You are a beautiful soul, inside and out. 🌻',
     'You inspire others to be better just by being yourself. ✨',
@@ -36,7 +37,7 @@ function HomePage() {
     const complimentInterval = setInterval(() => {
       setCompliment(compliments[complimentIndex]);
       complimentIndex = (complimentIndex + 1) % compliments.length;
-    }, 5000);
+    }, 2000);
 
     return () => {
       clearInterval(typingInterval);
@@ -45,8 +46,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div  className="homepage-container">
-        
+    <div className="homepage-container">
       <div className="magic-text">
         {text && text.split('').map((letter, index) => (
           <span key={index}>{letter}</span>
@@ -54,6 +54,16 @@ function HomePage() {
       </div>
       <p className="birthday-wish">Happy Birthday, {"MOHINI"}! 🎉🎂</p>
       {compliment && <p className="birthday-wish">{compliment}</p>}
+
+      {/* <div className="audio-container">
+        <audio id="audio" controls preload="auto">
+          <source src="/music/birthday.mp3" type="audio/mp3" />
+        
+          Your browser does not support the audio element.
+        </audio>
+       
+      </div> */}
+
       <a href="/surprise" className="magic-button">
         Open Your Surprise!
       </a>
