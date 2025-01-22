@@ -4,7 +4,18 @@ body {
     background: linear-gradient(120deg, #84fab0, #8fd3f4);
     animation: gradient 8s infinite alternate;
   }
+  .video-container {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the iframe */
+    align-items: center;      /* Vertically centers the iframe */
+    height: 100vh;            /* Makes the container take up the full height of the viewport */
+    margin: 0;
+  }
   
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
   h1 {
     color: #fff;
     font-size: 3.5rem;

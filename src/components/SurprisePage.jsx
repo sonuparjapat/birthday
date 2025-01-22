@@ -6,7 +6,8 @@ function SurprisePage() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '100px' }}>
+    <>
+    {/* <div >
       <Confetti />
       <h1>🎉 You Are Amazing! 🌟</h1>
       <p>May this year bring you endless happiness and success. 🎁✨</p>
@@ -25,7 +26,21 @@ function SurprisePage() {
       >
         Go Back
       </button>
-    </div>
+    </div> */}
+    <div  className="video-container">
+    <iframe
+        width="1200"
+        height="720"
+   src="https://www.youtube.com/embed/2UIUk6QohVM?autoplay=1&mute=1&si=kBBbdOA0Mfa7CoTk"
+        title="YouTube video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe></div>
+  
+  
+
+    </>
   );
 }
 
