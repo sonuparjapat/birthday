@@ -55,14 +55,14 @@ function HomePage() {
       <p className="birthday-wish">Happy Birthday, {"MOHINI"}! 🎉🎂</p>
       {compliment && <p className="birthday-wish">{compliment}</p>}
 
-      {/* <div className="audio-container">
+      <div className="audio-container">
         <audio id="audio" controls preload="auto">
           <source src="/music/birthday.mp3" type="audio/mp3" />
         
           Your browser does not support the audio element.
         </audio>
        
-      </div> */}
+      </div>
 
       <a href="/surprise" className="magic-button">
         Open Your Surprise!
